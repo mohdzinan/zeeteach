@@ -12,7 +12,7 @@
 .fact-note { align-self: center; max-width: 390px; color: #e1e4dc; font-size: .86rem; }
 .priority-section { padding: 76px 0 80px; background: var(--paper-raised); }
 .priority-layout { display: grid; grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr); gap: clamp(36px, 7vw, 96px); align-items: start; }
-.priority-layout h2, .exam-layout h2, .sources-section h2 { margin: 0 0 18px; font: 500 clamp(2rem, 4vw, 3.1rem)/1.08 var(--serif); letter-spacing: -.03em; }
+.priority-layout h2, .exam-layout h2 { margin: 0 0 18px; font: 500 clamp(2rem, 4vw, 3.1rem)/1.08 var(--serif); letter-spacing: -.03em; }
 .priority-layout > div:first-child > p:last-child { color: var(--muted); }
 .priority-table-wrap { overflow-x: auto; }
 .priority-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .88rem; }
@@ -51,11 +51,6 @@
 .exam-layout ol { margin: 0; padding: 0; list-style: none; counter-reset: answer; }
 .exam-layout li { display: grid; grid-template-columns: 125px 1fr; gap: 20px; padding: 14px 0; border-top: 1px solid #c4bbaa; }
 .exam-layout li b { color: var(--clay); }
-.sources-section { padding: 78px 0 88px; }
-.sources-section ul { max-width: 860px; padding-left: 22px; }
-.sources-section li { padding: 0 0 12px 4px; }
-.sources-section > .guide-container > p:not(.eyebrow) { max-width: 850px; color: var(--muted); }
-.sources-section .text-link { display: inline-block; margin-top: 12px; color: var(--forest); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 @media (max-width: 760px) {
     .guide-container, .guide-hero-inner { width: min(100% - 36px, var(--guide-width)); }
     .guide-hero-inner { padding-top: 62px; }

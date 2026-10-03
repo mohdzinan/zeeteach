@@ -72,13 +72,19 @@ function publicApiRateLimit(req, res, next) {
 
 app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
 app.get('/study-guide', (req, res) => res.sendFile(path.join(ROOT, 'study-guide.html')));
+app.get('/quiz', (req, res) => res.sendFile(path.join(ROOT, 'quiz.html')));
 app.get('/terms', (req, res) => res.sendFile(path.join(ROOT, 'terms.html')));
 app.get('/privacy', (req, res) => res.sendFile(path.join(ROOT, 'privacy.html')));
 
 const publicAssets = new Map([
     ['/styles.css', 'styles.css'],
+    ['/theme.js', 'theme.js'],
     ['/study-guide.css', 'study-guide.css'],
     ['/study-guide.html', 'study-guide.html'],
+    ['/quiz.css', 'quiz.css'],
+    ['/quiz.html', 'quiz.html'],
+    ['/quiz-data.js', 'quiz-data.js'],
+    ['/quiz.js', 'quiz.js'],
     ['/terms.html', 'terms.html'],
     ['/privacy.html', 'privacy.html'],
     ['/app.js', 'app.js'],
