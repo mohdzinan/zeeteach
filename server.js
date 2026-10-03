@@ -71,6 +71,8 @@ function publicApiRateLimit(req, res, next) {
 }
 
 app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
+app.get('/syllabus', (req, res) => res.sendFile(path.join(ROOT, 'syllabus.html')));
+app.get('/streams', (req, res) => res.sendFile(path.join(ROOT, 'streams.html')));
 app.get('/commerce', (req, res) => res.sendFile(path.join(ROOT, 'commerce.html')));
 app.get('/commerce/economics', (req, res) => res.sendFile(path.join(ROOT, 'economics.html')));
 app.get('/commerce/economics/chapter-1', (req, res) => res.sendFile(path.join(ROOT, 'chapter-1.html')));
@@ -87,6 +89,9 @@ const publicAssets = new Map([
     ['/favicon.svg', 'favicon.svg'],
     ['/theme.js', 'theme.js'],
     ['/hub.css', 'hub.css'],
+    ['/syllabus.js', 'syllabus.js'],
+    ['/streams.js', 'streams.js'],
+    ['/flow.js', 'flow.js'],
     ['/study-guide.css', 'study-guide.css'],
     ['/study-guide.html', 'study-guide.html'],
     ['/quiz.css', 'quiz.css'],

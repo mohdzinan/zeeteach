@@ -24,7 +24,7 @@
 .stream-symbol { position: absolute; top: 42px; left: 50%; color: rgb(215 173 133 / 85%); font: 500 8rem/.9 var(--serif); transform: translateX(-50%); }
 .stream-card-soon .stream-symbol { color: rgb(96 103 95 / 14%); }
 .stream-card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
-.stream-card-bottom > span:first-child, .subject-card-main { display: grid; gap: 5px; }
+.stream-card-bottom > span:first-child, .subject-card-main { display: grid; min-width: 0; gap: 5px; }
 .stream-card-bottom strong { font: 500 1.8rem/1.1 var(--serif); }
 .stream-card-bottom small, .subject-card small { color: var(--muted); font-size: .85rem; }
 .stream-card-active small { color: #d5ddd4; }
