@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Economic development</title><desc id="desc">A rising path connecting education, infrastructure, enterprise, and improved wellbeing.</desc>
+  <rect width="1200" height="760" rx="40" fill="#eef4e9"/><circle cx="1030" cy="140" r="78" fill="#efd9b9"/>
+  <path d="M100 600h1000" stroke="#8b7355" stroke-width="20" stroke-linecap="round"/><path d="M160 570 390 470 610 390 830 270 1040 200" fill="none" stroke="#4a7c9e" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m1000 190 70 0-30 62" fill="none" stroke="#4a7c9e" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#2c3e50"><g><circle cx="245" cy="532" r="76" fill="#fff" stroke="#2d5016" stroke-width="8"/><path d="M205 515h80v52h-80zM195 512l50-32 50 32" fill="#d4a574" stroke="#2d5016" stroke-width="6"/><text x="245" y="665" font-size="25">Education</text></g>
+  <g><circle cx="480" cy="435" r="76" fill="#fff" stroke="#2d5016" stroke-width="8"/><path d="M435 465v-48l45-36 45 36v48M460 465v-30h40v30" fill="#b8d0dc" stroke="#2d5016" stroke-width="6"/><text x="480" y="570" font-size="25">Infrastructure</text></g>
+  <g><circle cx="710" cy="335" r="76" fill="#fff" stroke="#2d5016" stroke-width="8"/><path d="M675 372v-70h70v70M665 302l45-30 45 30M690 320h12v15h-12m25-15h12v15h-12" fill="#d4a574" stroke="#2d5016" stroke-width="6"/><text x="710" y="470" font-size="25">Enterprise</text></g>
+  <g><circle cx="930" cy="235" r="76" fill="#fff" stroke="#2d5016" stroke-width="8"/><path d="M930 278s-48-28-48-59a25 25 0 0 1 48-10 25 25 0 0 1 48 10c0 31-48 59-48 59" fill="#d4a574" stroke="#2d5016" stroke-width="6"/><text x="930" y="370" font-size="25">Wellbeing</text></g></g>
+</svg>

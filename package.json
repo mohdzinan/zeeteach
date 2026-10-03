@@ -1,0 +1,25 @@
+{
+  "name": "zeeteach",
+  "version": "1.0.0",
+  "description": "ZeeTeach - Interactive presentation platform for Indian Economic Development",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "education",
+    "presentation",
+    "economics",
+    "interactive",
+    "zeeteach"
+  ],
+  "author": "ZeeTeach Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}

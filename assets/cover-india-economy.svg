@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">India’s changing economy</title>
+  <desc id="desc">A connected landscape of farms, renewable energy, industry, transport, and a modern Indian city.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d9edf0"/><stop offset="1" stop-color="#f5f7f0"/></linearGradient>
+    <linearGradient id="field" x2="0" y2="1"><stop stop-color="#a8bf83"/><stop offset="1" stop-color="#52743e"/></linearGradient>
+    <linearGradient id="road" x2="1" y2="0"><stop stop-color="#d4a574"/><stop offset="1" stop-color="#efd9b9"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#24372a" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="url(#sky)"/>
+  <circle cx="920" cy="150" r="75" fill="#efc982" opacity=".85"/>
+  <path d="M0 420 180 290l180 125 180-175 190 170 170-145 300 165v245H0Z" fill="#c1d4c3"/>
+  <path d="M0 490 200 365l185 120 200-150 205 145 190-120 220 125v190H0Z" fill="#7d9c77" opacity=".76"/>
+  <!-- Farmland and crop rows -->
+  <path d="M0 565q190-90 400-15v350H0Z" fill="url(#field)"/>
+  <g fill="none" stroke="#d9c986" stroke-width="8" opacity=".82"><path d="M-30 660q185-95 440-46M-35 722q190-105 445-52M-40 790q200-110 445-57M-35 855q210-112 435-58"/></g>
+  <g stroke="#315a35" stroke-width="9" stroke-linecap="round" fill="none"><path d="M100 575v-76m0 31-20-20m20 35 22-24M190 555v-90m0 40-25-25m25 40 25-26M290 560v-72m0 29-21-21m21 38 24-26"/></g>
+  <g fill="#d4a574"><path d="M93 494q-20-17-14-37 21 7 21 28 7-23 28-22-3 22-28 33Z"/><path d="M183 464q-21-18-13-39 22 8 22 30 7-25 29-23-4 23-30 36Z"/><path d="M283 483q-20-17-14-37 22 7 22 28 7-23 28-22-4 22-29 33Z"/></g>
+  <!-- River and road connect regions -->
+  <path d="M0 520q120 45 235 5t240 22q105 62 214 23t202 18q130 65 309-4v80q-172 55-310-12t-218-19q-118 42-232-24t-205-28q-116 39-235-4Z" fill="#73a9b8" opacity=".8"/>
+  <path d="M0 768q200-105 385-40t347-4q178 47 468-88" fill="none" stroke="url(#road)" stroke-width="42" stroke-linecap="round"/>
+  <path d="M0 768q200-105 385-40t347-4q178 47 468-88" fill="none" stroke="#fff7e9" stroke-width="4" stroke-dasharray="22 25" stroke-linecap="round" opacity=".9"/>
+  <!-- Industry -->
+  <g filter="url(#shadow)">
+    <path d="M398 540V397l94 57v-74l99 62v-44l100 66v145H398Z" fill="#b97856"/>
+    <path d="M398 540V397l94 57v-74l99 62v-44l100 66v42l-100-66v44l-99-62v74l-94-57v97Z" fill="#cf8b62"/>
+    <path d="M445 394v-99h35v121m58-85v-73h34v95" fill="#61747a"/>
+    <path d="M453 284q-30-20-8-44 31 15 8 44m68-30q-23-21 0-40 27 19 0 40" fill="#fff" opacity=".72"/>
+    <g fill="#f1d8aa"><rect x="430" y="478" width="27" height="34" rx="4"/><rect x="483" y="478" width="27" height="34" rx="4"/><rect x="538" y="478" width="27" height="34" rx="4"/><rect x="592" y="478" width="27" height="34" rx="4"/></g>
+    <path d="M412 540h356" stroke="#6e5140" stroke-width="12"/>
+  </g>
+  <!-- Solar energy -->
+  <g transform="translate(690 480)"><path d="M55 5v145M-8 151h130" stroke="#516c5c" stroke-width="9" stroke-linecap="round"/><circle cx="55" cy="5" r="12" fill="#d4a574"/><path d="M55 5 10-14m45 19 42-27m-42 27 7 48" stroke="#f5f7f0" stroke-width="9" stroke-linecap="round"/><path d="M-10 90 78 90l15 47H-22Z" fill="#4a7c9e" stroke="#fff" stroke-width="5"/><path d="M14 92 6 135m39-43-1 43m30-43 10 43M-15 112h98" stroke="#b9d4df" stroke-width="4"/></g>
+  <!-- City, connected services and technology -->
+  <g filter="url(#shadow)">
+    <path d="M795 540V332h105v208m12 0V260h123v280m15 0V370h91v170Z" fill="#4f7890"/>
+    <path d="M812 353h24v28h-24m49-28h24v28h-24m-49 34h24v28h-24m49-28h24v28h-24m54-115h24v29h-24m46-29h24v29h-24m-46 36h24v29h-24m46-29h24v29h-24m-46 38h24v29h-24m46-29h24v29h-24m66-1h24v28h-24m42-28h24v28h-24m-66 37h24v28h-24m42-28h24v28h-24" fill="#d9e8e6"/>
+    <path d="M920 260v-42h25v42m41 0v-42h25v42m-68-43 54-42 54 42" fill="#d4a574"/>
+    <path d="M771 540h365" stroke="#47614e" stroke-width="13"/>
+  </g>
+  <!-- New growth line -->
+  <path d="M190 335 330 292 470 318 605 220 735 236 870 155 1030 170" fill="none" stroke="#2d5016" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".86"/>
+  <g fill="#f5f7f0" stroke="#2d5016" stroke-width="8"><circle cx="190" cy="335" r="13"/><circle cx="330" cy="292" r="13"/><circle cx="470" cy="318" r="13"/><circle cx="605" cy="220" r="13"/><circle cx="735" cy="236" r="13"/><circle cx="870" cy="155" r="13"/><circle cx="1030" cy="170" r="13"/></g>
+  <!-- Trees and small transport cues -->
+  <g fill="#426b49"><circle cx="760" cy="505" r="35"/><circle cx="754" cy="470" r="28"/><path d="M752 500h16v49h-16z" fill="#80664d"/><circle cx="1125" cy="490" r="40"/><circle cx="1118" cy="450" r="30"/><path d="M1117 490h17v53h-17z" fill="#80664d"/></g>
+  <g transform="translate(330 715)" fill="#f5f7f0" stroke="#4a7c9e" stroke-width="6"><rect x="-32" y="-20" width="64" height="30" rx="12"/><circle cx="-18" cy="14" r="8" fill="#2c3e50"/><circle cx="18" cy="14" r="8" fill="#2c3e50"/></g>
+  <path d="M42 42h1116v816H42Z" fill="none" stroke="#fff" stroke-width="8" opacity=".65"/>
+</svg>
