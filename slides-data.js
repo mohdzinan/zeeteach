@@ -3,7 +3,7 @@ const slidesData = [
     {
         type: 'title',
         title: 'Indian Economic Development',
-        subtitle: 'A guided presentation for Class XI Economics',
+        subtitle: 'A guided presentation for Class XI Economics · 2025',
         image: 'assets/cover-india-economy.svg',
         imageAlt: 'Fields, a factory, renewable energy, transport, and a growing Indian city'
     },

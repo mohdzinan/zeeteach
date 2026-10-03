@@ -54,7 +54,7 @@ function createSlideElement(data, index) {
             const art = document.createElement('div');
             art.className = 'slide-title-art';
             const image = document.createElement('img');
-            image.src = data.image;
+            image.src = slideImageUrl(data.image);
             image.alt = data.imageAlt || `${data.title} illustration`;
             art.appendChild(image);
             slide.appendChild(art);
@@ -84,7 +84,7 @@ function createSlideElement(data, index) {
         const imagePanel = document.createElement('div');
         imagePanel.className = 'slide-image';
         const image = document.createElement('img');
-        image.src = data.image;
+        image.src = slideImageUrl(data.image);
         image.alt = `${data.title} illustration`;
         imagePanel.appendChild(image);
         const textPanel = document.createElement('div');
@@ -118,6 +118,10 @@ function createContentList(items) {
 function isAllowedSlideImage(source) {
     return typeof source === 'string' &&
         /^assets\/(?:cover-india-economy|development|history|reforms|sectors|agriculture|industry|services|challenges|public-programs|rural-development|urban-development|sustainability|global-trade)\.svg$/.test(source);
+}
+
+function slideImageUrl(source) {
+    return new URL(`/${source}`, window.location.origin).href;
 }
 
 function showSlide(index) {
@@ -228,7 +232,7 @@ function downloadSlide() {
     if (!data) return;
     const title = escapeHtml(data.title);
     const image = isAllowedSlideImage(data.image)
-        ? `<img src="${escapeHtml(new URL(data.image, window.location.href).href)}" alt="${title} illustration">`
+        ? `<img src="${escapeHtml(slideImageUrl(data.image))}" alt="${title} illustration">`
         : '';
     const content = Array.isArray(data.content)
         ? `<ul>${data.content.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
@@ -251,7 +255,7 @@ function downloadSlide() {
 function sharePresentation() {
     const details = {
         title: 'ZeeTeach | Indian Economic Development',
-        text: 'Interactive Class XI presentation on Indian economic development.',
+        text: 'Interactive Class XI 2025 presentation on Indian economic development.',
         url: window.location.href
     };
     if (navigator.share) {
