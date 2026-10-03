@@ -134,6 +134,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -.035e
 }
 .hero-summary { max-width: 450px; color: var(--muted); font-size: 1.08rem; }
 .hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 30px; }
+.hero-actions .button { width: min(100%, 370px); justify-content: space-between; }
 .button {
     display: inline-flex;
     align-items: center;

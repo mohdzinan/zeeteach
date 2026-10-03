@@ -78,6 +78,7 @@ app.get('/privacy', (req, res) => res.sendFile(path.join(ROOT, 'privacy.html')))
 
 const publicAssets = new Map([
     ['/styles.css', 'styles.css'],
+    ['/favicon.svg', 'favicon.svg'],
     ['/theme.js', 'theme.js'],
     ['/study-guide.css', 'study-guide.css'],
     ['/study-guide.html', 'study-guide.html'],
