@@ -73,6 +73,7 @@ function publicApiRateLimit(req, res, next) {
 app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
 app.get('/syllabus', (req, res) => res.sendFile(path.join(ROOT, 'syllabus.html')));
 app.get('/streams', (req, res) => res.sendFile(path.join(ROOT, 'streams.html')));
+app.get('/plus-two-options', (req, res) => res.sendFile(path.join(ROOT, 'plus-two-options.html')));
 app.get('/commerce', (req, res) => res.sendFile(path.join(ROOT, 'commerce.html')));
 app.get('/commerce/economics', (req, res) => res.sendFile(path.join(ROOT, 'economics.html')));
 app.get('/commerce/economics/chapter-1', (req, res) => res.sendFile(path.join(ROOT, 'chapter-1.html')));
