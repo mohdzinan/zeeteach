@@ -1,226 +1,168 @@
-// Slides data with content and images
+// Course content and the local illustrations used by the interactive lesson.
 const slidesData = [
     {
         type: 'title',
         title: 'Indian Economic Development',
-        subtitle: 'Scheme of Work - Class XI',
-        image: 'assets/cover-india-economy.svg'
+        subtitle: 'A guided presentation for Class XI Economics',
+        image: 'assets/cover-india-economy.svg',
+        imageAlt: 'Fields, a factory, renewable energy, transport, and a growing Indian city'
     },
     {
-        type: 'image-content',
-        title: 'Course Overview',
-        image: 'assets/development.svg',
+        type: 'image-content', title: 'Course Overview', image: 'assets/development.svg',
         content: [
-            '📚 Understanding Indian Economic Development',
-            '📈 Historical Context and Growth',
-            '🏭 Key Economic Sectors',
-            '🎯 Development Challenges and Solutions',
-            '🚀 Future Economic Prospects'
+            'Trace the major phases of India’s economic history.',
+            'Compare agriculture, industry, and services.',
+            'Examine development programmes and persistent challenges.',
+            'Connect domestic change with global economic relations.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 1: Introduction to Economic Development',
-        image: 'assets/development.svg',
+        type: 'image-content', title: 'What Do We Mean by Development?', image: 'assets/development.svg',
         content: [
-            '📖 Definition of economic development',
-            '📊 Difference between growth and development',
-            '📈 Indicators of development (GDP, HDI, etc.)',
-            '🏛️ Role of government in development',
-            '🎯 Development goals and objectives'
+            'Economic growth measures a rise in the production of goods and services.',
+            'Development also considers health, education, opportunity, and quality of life.',
+            'Income measures are useful, but they do not describe every part of wellbeing.',
+            'Development goals differ across people and communities.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 2: Historical Economic Context',
-        image: 'assets/history.svg',
+        type: 'image-content', title: 'Historical Economic Context', image: 'assets/history.svg',
         content: [
-            '🏛️ Pre-Independence Era:',
-            '   • Colonial economy and its impact',
-            '   • Deindustrialization period',
-            '📅 Post-Independence (1947-1990):',
-            '   • Five-year plans',
-            '   • Import substitution strategy',
-            '   • State-led development'
+            'Colonial rule reshaped production and trade around imperial priorities.',
+            'After independence, planning and public investment guided development.',
+            'Import substitution aimed to build domestic industrial capacity.',
+            'Economic reforms beginning in 1991 changed policy and global engagement.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 3: Economic Reforms (1991 Onwards)',
-        image: 'assets/reforms.svg',
+        type: 'image-content', title: 'Economic Reforms Since 1991', image: 'assets/reforms.svg',
         content: [
-            '🔓 Dismantling of License Raj',
-            '💼 Foreign Direct Investment (FDI) policy',
-            '🌍 Trade liberalization and globalization',
-            '💻 Technology and innovation adoption',
-            '📊 Market-driven economic policies'
+            'Liberalization reduced many controls over production and trade.',
+            'Privatization expanded the role of private enterprise in several areas.',
+            'Globalization increased links with markets, investment, and technology abroad.',
+            'Reforms created new opportunities as well as new adjustments for workers and firms.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 4: Major Economic Sectors',
-        image: 'assets/sectors.svg',
+        type: 'image-content', title: 'Three Connected Economic Sectors', image: 'assets/sectors.svg',
         content: [
-            '🌾 Agriculture Sector - Rural backbone',
-            '🏭 Industrial Sector - Manufacturing and production',
-            '💼 Services Sector - Fastest growing segment',
-            '🔗 Interdependence and sectoral linkages',
-            '📊 Contribution to GDP and employment'
+            'Agriculture supplies food and raw materials and supports rural livelihoods.',
+            'Industry transforms materials into manufactured goods and infrastructure.',
+            'Services include transport, communication, finance, education, and health.',
+            'The sectors depend on one another through jobs, markets, and supply chains.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Agriculture Sector',
-        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%232D5016"/><rect y="200" width="400" height="100" fill="%238B7355"/><circle cx="80" cy="150" r="30" fill="%23D4A574"/><circle cx="120" cy="160" r="25" fill="%23D4A574"/><path d="M 200 100 L 180 200 L 220 200 Z" fill="%23228B22"/><path d="M 250 120 L 230 200 L 270 200 Z" fill="%23228B22"/><path d="M 300 110 L 280 200 L 320 200 Z" fill="%23228B22"/><circle cx="350" cy="140" r="20" fill="%23FFD700"/></svg>',
+        type: 'image-content', title: 'Agriculture and Rural Livelihoods', image: 'assets/agriculture.svg',
         content: [
-            '📊 Contribution to GDP: ~15-18%',
-            '👥 Employment: ~40% of workforce',
-            '🌾 Green Revolution impact on productivity',
-            '🔬 Modern agricultural techniques and technology',
-            '⚠️ Challenges: Land fragmentation, climate change, water scarcity'
+            'Farming supports livelihoods and provides inputs for other industries.',
+            'Irrigation, storage, transport, and access to markets shape farm outcomes.',
+            'Land fragmentation and climate pressures affect many producers.',
+            'Productivity can improve through research, resilient practices, and reliable services.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Industrial Sector',
-        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%234A7C9E"/><rect x="50" y="100" width="60" height="150" fill="%238B7355"/><rect x="50" y="80" width="60" height="25" fill="%23808080"/><rect x="150" y="80" width="70" height="170" fill="%238B7355"/><rect x="150" y="50" width="70" height="35" fill="%23808080"/><rect x="260" y="110" width="50" height="140" fill="%238B7355"/><rect x="260" y="85" width="50" height="30" fill="%23808080"/><circle cx="85" cy="70" r="8" fill="%23FFD700"/><circle cx="190" cy="35" r="8" fill="%23FFD700"/><circle cx="285" cy="75" r="8" fill="%23FFD700"/><rect y="250" width="400" height="50" fill="%23666666"/></svg>',
+        type: 'image-content', title: 'Industry and Production', image: 'assets/industry.svg',
         content: [
-            '📊 Contribution to GDP: ~25-30%',
-            '🏭 Key industries: Steel, Textiles, Pharmaceuticals, IT',
-            '🎯 Small and Medium Enterprises (MSMEs)',
-            '🔨 Make in India initiative',
-            '🌉 Infrastructure and logistics support'
+            'Manufacturing adds value by turning materials into useful products.',
+            'Industry creates links with farming, logistics, energy, and business services.',
+            'Small firms are important sources of production and employment.',
+            'Skills, infrastructure, finance, and technology influence industrial growth.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Services Sector',
-        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23F5F7F0"/><rect x="30" y="40" width="120" height="150" fill="%234A7C9E" stroke="%232D5016" stroke-width="2"/><text x="90" y="130" font-size="24" text-anchor="middle" fill="white">💻</text><rect x="170" y="40" width="120" height="150" fill="%234A7C9E" stroke="%232D5016" stroke-width="2"/><text x="230" y="130" font-size="24" text-anchor="middle" fill="white">💰</text><rect x="310" y="40" width="60" height="150" fill="%234A7C9E" stroke="%232D5016" stroke-width="2"/><text x="340" y="130" font-size="24" text-anchor="middle" fill="white">🏥</text><path d="M 50 220 L 150 240 L 250 200 L 350 220 L 390 230" stroke="%232D5016" stroke-width="3" fill="none"/></svg>',
+        type: 'image-content', title: 'Services and New Forms of Work', image: 'assets/services.svg',
         content: [
-            '📊 Fastest growing sector - ~50-55% of GDP',
-            '💻 Information Technology (IT) and BPO boom',
-            '💰 Finance, Banking, and Insurance (BFSI)',
-            '✈️ Tourism and Hospitality industry',
-            '🏥 Healthcare and Education services'
+            'Services include education, healthcare, finance, transport, and communication.',
+            'Digital services connect customers, workers, and businesses in new ways.',
+            'Access and quality vary across regions and households.',
+            'Skills and dependable infrastructure help people participate in this sector.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 5: Development Challenges',
-        image: 'assets/challenges.svg',
+        type: 'image-content', title: 'Development Challenges', image: 'assets/challenges.svg',
         content: [
-            '💔 Poverty: Despite growth, significant poverty remains',
-            '👥 Unemployment: Especially youth unemployment',
-            '⚖️ Inequality: Wealth and income disparities',
-            '🌉 Infrastructure: Roads, electricity, water, sanitation',
-            '📚 Education & Health: Quality and accessibility'
+            'Poverty limits people’s choices and access to essential services.',
+            'Secure, productive work remains an important development concern.',
+            'Inequality can restrict access to education, health, and economic opportunity.',
+            'Infrastructure and public services differ across places.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 6: Government Programs & Initiatives',
-        image: 'assets/public-programs.svg',
+        type: 'image-content', title: 'Public Programmes and Initiatives', image: 'assets/public-programs.svg',
         content: [
-            '👷 MGNREGA: Rural employment guarantee',
-            '🚿 Swachh Bharat: Sanitation and cleanliness drive',
-            '🌐 Digital India: Digital infrastructure and literacy',
-            '🏭 Make in India: Manufacturing sector promotion',
-            '🎁 Pradhan Mantri Schemes: Various welfare programs'
+            'Employment programmes support households and local assets.',
+            'Sanitation initiatives focus on public health and community infrastructure.',
+            'Digital programmes aim to widen access to public services and information.',
+            'Manufacturing initiatives seek to strengthen domestic production.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Rural Development',
-        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23E8F0E1"/><rect y="200" width="400" height="100" fill="%238B7355"/><polygon points="100,150 80,200 120,200" fill="%23CD5C5C"/><polygon points="200,120 170,200 230,200" fill="%23CD5C5C"/><polygon points="300,140 270,200 330,200" fill="%23CD5C5C"/><circle cx="50" cy="80" r="8" fill="%23FFD700"/><circle cx="100" cy="60" r="8" fill="%23FFD700"/><circle cx="150" cy="70" r="8" fill="%23FFD700"/><line x1="0" y1="180" x2="400" y2="180" stroke="%234A7C9E" stroke-width="2"/><path d="M 200 170 L 200 190" stroke="%234A7C9E" stroke-width="2"/><path d="M 300 170 L 300 190" stroke="%234A7C9E" stroke-width="2"/></svg>',
+        type: 'image-content', title: 'Rural Development', image: 'assets/rural-development.svg',
         content: [
-            '🌾 Agricultural productivity improvement programs',
-            '🌉 Village infrastructure development',
-            '💡 Rural electrification and connectivity',
-            '🏥📚 Healthcare and education access',
-            '🏭 Cottage and small industries promotion',
-            '🌱 Sustainable and organic farming practices'
+            'Reliable roads, electricity, water, and communications support village life.',
+            'Healthcare and education access shape long-term opportunity.',
+            'Rural enterprises can diversify income beyond farming.',
+            'Local planning helps communities identify their own priorities.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Urban Development',
-        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%2387CEEB"/><rect x="30" y="120" width="50" height="130" fill="%23696969" stroke="%23000" stroke-width="2"/><rect x="100" y="100" width="50" height="150" fill="%23696969" stroke="%23000" stroke-width="2"/><rect x="170" y="80" width="50" height="170" fill="%23696969" stroke="%23000" stroke-width="2"/><rect x="240" y="110" width="50" height="140" fill="%23696969" stroke="%23000" stroke-width="2"/><rect x="310" y="130" width="50" height="120" fill="%23696969" stroke="%23000" stroke-width="2"/><rect y="250" width="400" height="50" fill="%2388AA00"/><circle cx="80" cy="50" r="5" fill="%23FFD700"/><circle cx="150" cy="40" r="5" fill="%23FFD700"/><circle cx="280" cy="55" r="5" fill="%23FFD700"/></svg>',
+        type: 'image-content', title: 'Urban Development', image: 'assets/urban-development.svg',
         content: [
-            '🌆 Rapid urbanization and its challenges',
-            '🏠 Housing and slum redevelopment',
-            '🚇 Transportation and urban mobility',
-            '🏙️ Smart cities and digital solutions',
-            '♻️ Pollution and waste management',
-            '💼 Urban employment opportunities'
+            'Cities bring workers, firms, services, and markets into close contact.',
+            'Housing, transport, and public space influence everyday access.',
+            'Urban growth places pressure on water, air quality, and waste systems.',
+            'Good planning links new development with reliable public services.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 9: Sustainable Development',
-        image: 'assets/sustainability.svg',
+        type: 'image-content', title: 'Sustainable Development', image: 'assets/sustainability.svg',
         content: [
-            '🌍 Environmental concerns and conservation',
-            '☁️ Climate change impact on the economy',
-            '♻️ Green economy and renewable energy transition',
-            '🤝 Corporate Social Responsibility (CSR)',
-            '🔄 Circular economy and waste reduction',
-            '🎯 Sustainable Development Goals (SDGs)'
+            'Development must consider how resources are used over time.',
+            'Climate risks affect agriculture, infrastructure, health, and livelihoods.',
+            'Cleaner energy and efficient production can reduce environmental pressure.',
+            'The goal is to improve people’s lives while protecting future choices.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Unit 10: International Economic Relations',
-        image: 'assets/global-trade.svg',
+        type: 'image-content', title: 'India and the Global Economy', image: 'assets/global-trade.svg',
         content: [
-            '📤 Export and Import trends analysis',
-            '🤝 Trade agreements and bilateral partnerships',
-            '💼 Foreign Direct Investment (FDI) inflows',
-            '💸 Remittances from diaspora and workers',
-            '🌍 India\'s position in global economy',
-            '📋 WTO and international trade commitments'
+            'Exports connect domestic producers with buyers in other countries.',
+            'Imports provide products, materials, and technologies for households and firms.',
+            'Investment can bring capital, expertise, and links to supply chains.',
+            'Trade relationships create both opportunities and exposure to global change.'
         ]
     },
     {
-        type: 'image-content',
-        title: 'Learning Outcomes',
-        image: 'assets/development.svg',
+        type: 'image-content', title: 'Learning Outcomes', image: 'assets/development.svg',
         content: [
-            '✅ Understand Indian economic development journey',
-            '✅ Analyze key economic sectors and their roles',
-            '✅ Evaluate development challenges and solutions',
-            '✅ Apply economic concepts to real-world scenarios',
-            '✅ Think critically about sustainable development',
-            '✅ Develop analytical and research skills'
+            'Explain how India’s development strategy changed over time.',
+            'Describe links among agriculture, industry, and services.',
+            'Discuss how policy and public programmes address development challenges.',
+            'Use economic ideas to interpret examples from everyday life.'
         ]
     },
     {
-        type: 'content',
-        title: 'Assessment Methods',
+        type: 'content', title: 'Assessment and Discussion',
         content: [
-            '💬 Class participation and discussions',
-            '📋 Case studies and project work',
-            '❓ Quizzes and assignments',
-            '🔬 Research projects on economic themes',
-            '📝 Term exams and continuous evaluation',
-            '🎤 Presentations and seminars'
+            'Compare growth and development using a local example.',
+            'Map a product’s journey across the three economic sectors.',
+            'Discuss how one public programme affects a community.',
+            'Support conclusions with evidence from class materials.'
         ]
     },
     {
-        type: 'content',
-        title: 'Learning Resources',
+        type: 'content', title: 'Learning Resources',
         content: [
-            '📚 NCERT Economics Textbooks (Class XI & XII)',
-            '📊 Government economic surveys and reports',
-            '📋 Ministry publications and policy documents',
-            '📰 Economic and financial news sources',
-            '🎥 Online educational platforms and videos',
-            '💾 Statistical data from government websites'
+            'NCERT economics textbooks for Classes XI and XII.',
+            'Government economic surveys and statistical publications.',
+            'Publications from ministries and research institutions.',
+            'Credible reporting on economic and policy issues.'
         ]
     },
     {
-        type: 'title',
-        title: 'Thank You',
-        subtitle: 'Questions and Discussion',
-        message: 'Indian Economic Development: Understanding the past, analyzing the present, building the future'
+        type: 'title', title: 'Questions and Discussion',
+        subtitle: 'Indian Economic Development',
+        message: 'Which change has most shaped economic opportunity in your community?'
     }
 ];

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Services in the economy</title><desc id="desc">Education, health, finance, and digital services represented as connected public-facing institutions.</desc>
+  <rect width="1200" height="760" rx="12" fill="#e9e5db"/><path d="M90 570h1020" stroke="#6f806d" stroke-width="12"/>
+  <g stroke-width="8"><g transform="translate(125 190)"><path d="M0 130 180 35l180 95v320H0Z" fill="#d9d1bd" stroke="#6c705e"/><path d="M-10 130h380M35 185h52v75H35m78-75h52v75h-52m78-75h52v75h-52m-208 58h52v74H35m78-74h52v74h-52m78-74h52v74h-52M130 450V335h95v115" fill="#f1eadb" stroke="#6c705e"/></g>
+  <g transform="translate(520 225)"><path d="M0 95h360v355H0Z" fill="#e0ccb2" stroke="#8b664d"/><path d="M-12 95 180 15 372 95M75 150v255m105-255v255m105-255v255M45 450h270" fill="none" stroke="#8b664d"/><circle cx="180" cy="77" r="30" fill="#d4a574" stroke="#8b664d"/><path d="M180 61v32m-16-16h32" stroke="#f4eee2"/></g>
+  <g transform="translate(910 270)"><path d="M0 110h180v340H0Z" fill="#c7d0c2" stroke="#506c5b"/><path d="M25 150h130v80H25zm0 105h130v80H25zm0 105h130v62H25Z" fill="#edf0e8" stroke="#506c5b"/><path d="M65 192h50m-50 105h50m-50 104h50" stroke="#a55235" stroke-width="9" stroke-linecap="round"/></g></g>
+  <g font-family="Arial,sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#263b30"><text x="305" y="635">Education</text><text x="700" y="635">Health and finance</text><text x="1000" y="635">Digital services</text></g>
+</svg>

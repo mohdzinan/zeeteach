@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Urban development</title><desc id="desc">A dense city with public transit, housing, trees, and connected streets.</desc>
+  <rect width="1200" height="760" rx="12" fill="#e6e4da"/><path d="M0 548h1200v212H0Z" fill="#c6c1b4"/>
+  <g stroke="#526c65" stroke-width="8"><path d="M75 548V285h155v263Z" fill="#8a9b91"/><path d="M270 548V195h190v353Z" fill="#6f8986"/><path d="M500 548V325h150v223Z" fill="#b18b68"/><path d="M695 548V235h190v313Z" fill="#84968d"/><path d="M920 548V155h200v393Z" fill="#637f80"/></g>
+  <g fill="#e9e3d4"><path d="M100 320h32v38h-32m65 0h32v38h-32m-65 32h32v38h-32m65 0h32v38h-32m90-250h35v42h-35m76 0h35v42h-35m-76 34h35v42h-35m76 0h35v42h-35m-76 34h35v42h-35m76 0h35v42h-35m80-110h32v38h-32m56 0h32v38h-32m-88 34h32v38h-32m56 0h32v38h-32m63-280h35v42h-35m72 0h35v42h-35m-107 34h35v42h-35m72 0h35v42h-35m-107 34h35v42h-35m72 0h35v42h-35m90-345h38v43h-38m78 0h38v43h-38m-116 36h38v43h-38m78 0h38v43h-38m-116 36h38v43h-38m78 0h38v43h-38m-116 36h38v43h-38m78 0h38v43h-38"/></g>
+  <path d="M0 610q180-45 375 0t400 0q220-44 425 0" fill="none" stroke="#58706a" stroke-width="24"/><path d="M0 610q180-45 375 0t400 0q220-44 425 0" fill="none" stroke="#eadfc9" stroke-width="3" stroke-dasharray="18 20"/>
+  <g transform="translate(440 536)"><path d="M0 0h300v76H0Z" fill="#a55235" stroke="#6d4939" stroke-width="8"/><path d="M44 13h70v28H44m93-28h70v28h-70m93-28h55v28h-55" fill="#e4ded1"/><circle cx="68" cy="78" r="19" fill="#334b41"/><circle cx="246" cy="78" r="19" fill="#334b41"/></g>
+  <g fill="#43654d"><circle cx="355" cy="515" r="42"/><circle cx="356" cy="473" r="31"/><path d="M349 510h16v45h-16z" fill="#76563d"/><circle cx="850" cy="515" r="42"/><circle cx="850" cy="473" r="31"/><path d="M842 510h16v45h-16z" fill="#76563d"/></g>
+</svg>

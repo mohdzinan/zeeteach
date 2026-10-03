@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">Economic development</title><desc id="desc">A rising path connecting education, infrastructure, enterprise, and improved wellbeing.</desc>
-  <rect width="1200" height="760" rx="40" fill="#eef4e9"/><circle cx="1030" cy="140" r="78" fill="#efd9b9"/>
+  <rect width="1200" height="760" rx="8" fill="#eef4e9"/><circle cx="1030" cy="140" r="78" fill="#efd9b9"/>
   <path d="M100 600h1000" stroke="#8b7355" stroke-width="20" stroke-linecap="round"/><path d="M160 570 390 470 610 390 830 270 1040 200" fill="none" stroke="#4a7c9e" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="m1000 190 70 0-30 62" fill="none" stroke="#4a7c9e" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
   <g font-family="Arial,sans-serif" text-anchor="middle" fill="#2c3e50"><g><circle cx="245" cy="532" r="76" fill="#fff" stroke="#2d5016" stroke-width="8"/><path d="M205 515h80v52h-80zM195 512l50-32 50 32" fill="#d4a574" stroke="#2d5016" stroke-width="6"/><text x="245" y="665" font-size="25">Education</text></g>

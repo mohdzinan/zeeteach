@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Rural development</title><desc id="desc">A village linked by roads, a water source, fields, and essential services.</desc>
+  <rect width="1200" height="760" rx="12" fill="#e8e5d8"/><path d="M0 350 215 215l210 130 220-155 210 145 210-116 145 105v130H0Z" fill="#8a9875"/><path d="M0 450q240-55 480 0t720-3v313H0Z" fill="#b5ad83"/>
+  <path d="M0 570q190-65 365-8v198H0Z" fill="#73875b"/><path d="M0 637q175-75 365-18M0 697q175-75 365-18" fill="none" stroke="#d8cb9e" stroke-width="9"/>
+  <g stroke="#6e513e" stroke-width="8" stroke-linejoin="round"><path d="M425 452V330l118-82 118 82v122Z" fill="#cfb48c"/><path d="M405 332 543 230l139 102" fill="#9b6045"/><path d="M516 452V359h57v93" fill="#e8dcc3"/><path d="M700 452V365l90-66 90 66v87Z" fill="#d6c5a4"/><path d="M682 367 790 283l108 84" fill="#617c78"/><path d="M766 452v-58h48v58" fill="#efe7d5"/></g>
+  <path d="M540 485q100 70 210 15t190 15q95 70 260 20" fill="none" stroke="#a55235" stroke-width="22" stroke-linecap="round"/><path d="M540 485q100 70 210 15t190 15q95 70 260 20" fill="none" stroke="#f1dfbf" stroke-width="3" stroke-dasharray="16 21"/>
+  <g transform="translate(940 280)" fill="none" stroke="#456b6c" stroke-width="10"><path d="M0 160V70h120v90m-150 0h180M30 105h18m32 0h18"/><path d="M35 70V28h50v42"/></g>
+  <g fill="#466747"><circle cx="365" cy="390" r="42"/><circle cx="374" cy="347" r="31"/><path d="M365 386h17v70h-17z" fill="#74543c"/><circle cx="1030" cy="475" r="40"/><circle cx="1040" cy="432" r="31"/><path d="M1030 470h17v65h-17z" fill="#74543c"/></g>
+</svg>

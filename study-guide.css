@@ -1,0 +1,84 @@
+.guide-page { --guide-width: 1120px; }
+.guide-container { width: min(var(--guide-width), calc(100% - 64px)); margin-inline: auto; }
+.guide-hero { background: var(--forest); color: var(--paper-raised); }
+.guide-hero-inner { width: min(1280px, calc(100% - 64px)); margin: auto; padding: clamp(64px, 9vw, 126px) 0 48px; }
+.guide-hero .eyebrow { color: #d5a58c; }
+.guide-hero h1 { max-width: 900px; margin: 0; font: 500 clamp(2.8rem, 7vw, 6.1rem)/.98 var(--serif); letter-spacing: -.045em; }
+.guide-deck { max-width: 650px; margin: 28px 0 52px; color: #e1e4dc; font-size: 1.12rem; }
+.guide-facts { display: grid; grid-template-columns: 110px 150px 170px minmax(220px, 1fr); border-top: 1px solid #758379; padding-top: 22px; gap: 20px; }
+.guide-facts div:not(.fact-note) { display: flex; flex-direction: column; }
+.guide-facts strong { color: #f0c5a8; font: 500 2rem/1 var(--serif); }
+.guide-facts span { margin-top: 6px; color: #e1e4dc; font-size: .87rem; }
+.fact-note { align-self: center; max-width: 390px; color: #e1e4dc; font-size: .86rem; }
+.priority-section { padding: 76px 0 80px; background: var(--paper-raised); }
+.priority-layout { display: grid; grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr); gap: clamp(36px, 7vw, 96px); align-items: start; }
+.priority-layout h2, .exam-layout h2, .sources-section h2 { margin: 0 0 18px; font: 500 clamp(2rem, 4vw, 3.1rem)/1.08 var(--serif); letter-spacing: -.03em; }
+.priority-layout > div:first-child > p:last-child { color: var(--muted); }
+.priority-table-wrap { overflow-x: auto; }
+.priority-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .88rem; }
+.priority-table caption { margin-bottom: 12px; color: var(--forest); font-weight: 700; text-align: left; }
+.priority-table th { color: var(--muted); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.priority-table th, .priority-table td { padding: 10px 8px; border-bottom: 1px solid var(--rule); }
+.priority-table td:first-child, .priority-table td:last-child { color: var(--clay); font-weight: 700; white-space: nowrap; }
+.table-source { margin: 12px 0 0; color: var(--muted); font-size: .78rem; }
+.chapter-nav { position: sticky; z-index: 5; top: 0; background: var(--paper); border-block: 1px solid var(--rule); }
+.chapter-nav .guide-container { display: flex; gap: 20px; overflow-x: auto; align-items: center; min-height: 58px; white-space: nowrap; scrollbar-width: thin; }
+.chapter-nav span { color: var(--clay); font-size: .76rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.chapter-nav a { color: var(--muted); text-decoration: none; font-size: .8rem; }
+.chapter-nav a:hover, .chapter-nav a:focus-visible { color: var(--clay); }
+.chapter-list { padding-block: 10px 70px; }
+.chapter { scroll-margin-top: 76px; padding: 76px 0 68px; border-bottom: 1px solid var(--rule); }
+.chapter-heading { max-width: 850px; margin-bottom: 34px; }
+.chapter-heading .eyebrow { margin-bottom: 12px; }
+.chapter h2 { margin: 0 0 18px; color: var(--forest); font: 500 clamp(2.3rem, 5vw, 4rem)/1.02 var(--serif); letter-spacing: -.035em; }
+.chapter-heading > p:last-child { margin: 0; color: #4f5a52; font-size: 1.08rem; }
+.chapter-body { display: grid; grid-template-columns: minmax(0, .92fr) minmax(330px, 1.08fr); align-items: start; gap: clamp(30px, 6vw, 80px); }
+.explanation h3 { margin: 0 0 12px; color: var(--forest); font: 600 1.22rem var(--serif); }
+.explanation p { margin: 0 0 14px; }
+.key-point { margin-top: 24px; padding: 17px 20px; border: 1px solid #bcae9d; background: #eae5d9; }
+.key-point strong { color: #87442f; font-size: .73rem; letter-spacing: .1em; text-transform: uppercase; }
+.key-point p { margin: 6px 0 0; }
+.diagram { margin: 0; padding: 18px 16px 14px; border: 1px solid var(--rule); background: var(--paper-raised); }
+.diagram svg { display: block; width: 100%; height: auto; font-family: var(--sans); font-size: 13px; fill: var(--ink); }
+.diagram svg .sub { font-size: 12px; font-weight: 700; }
+.diagram svg .small { font-size: 10px; fill: #60675f; }
+.diagram figcaption { margin-top: 12px; color: var(--muted); font-size: .77rem; line-height: 1.5; }
+.answer-tip { margin: 24px 0 0; padding: 14px 0 0; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+.answer-tip b { margin-right: 8px; color: var(--forest); }
+.exam-section { padding: 78px 0; background: var(--paper-deep); }
+.exam-layout { display: grid; grid-template-columns: minmax(230px, .72fr) minmax(0, 1.28fr); gap: clamp(40px, 8vw, 110px); }
+.exam-layout > div p:last-child { color: var(--muted); }
+.exam-layout ol { margin: 0; padding: 0; list-style: none; counter-reset: answer; }
+.exam-layout li { display: grid; grid-template-columns: 125px 1fr; gap: 20px; padding: 14px 0; border-top: 1px solid #c4bbaa; }
+.exam-layout li b { color: var(--clay); }
+.sources-section { padding: 78px 0 88px; }
+.sources-section ul { max-width: 860px; padding-left: 22px; }
+.sources-section li { padding: 0 0 12px 4px; }
+.sources-section > .guide-container > p:not(.eyebrow) { max-width: 850px; color: var(--muted); }
+.sources-section .text-link { display: inline-block; margin-top: 12px; color: var(--forest); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+@media (max-width: 760px) {
+    .guide-container, .guide-hero-inner { width: min(100% - 36px, var(--guide-width)); }
+    .guide-hero-inner { padding-top: 62px; }
+    .guide-facts { grid-template-columns: repeat(3, 1fr); }
+    .fact-note { grid-column: 1 / -1; }
+    .priority-section { padding-block: 54px; }
+    .priority-layout, .chapter-body, .exam-layout { grid-template-columns: 1fr; }
+    .priority-layout { gap: 30px; }
+    .chapter { padding-block: 54px; }
+    .chapter-body { gap: 28px; }
+    .chapter-nav .guide-container { width: calc(100% - 36px); gap: 16px; }
+}
+@media (max-width: 520px) {
+    .guide-page .header-inner { width: calc(100% - 36px); gap: 12px; }
+    .guide-page .primary-nav { gap: 12px; }
+    .guide-page .primary-nav a { font-size: .76rem; }
+    .guide-page .header-action { display: none; }
+    .guide-facts { gap: 10px; }
+    .guide-facts strong { font-size: 1.65rem; }
+    .priority-table { min-width: 570px; }
+    .diagram { padding-inline: 8px; }
+    .exam-layout li { grid-template-columns: 1fr; gap: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .guide-page { scroll-behavior: auto; }
+}

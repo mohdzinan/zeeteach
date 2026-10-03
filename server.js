@@ -71,9 +71,16 @@ function publicApiRateLimit(req, res, next) {
 }
 
 app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
+app.get('/study-guide', (req, res) => res.sendFile(path.join(ROOT, 'study-guide.html')));
+app.get('/terms', (req, res) => res.sendFile(path.join(ROOT, 'terms.html')));
+app.get('/privacy', (req, res) => res.sendFile(path.join(ROOT, 'privacy.html')));
 
 const publicAssets = new Map([
     ['/styles.css', 'styles.css'],
+    ['/study-guide.css', 'study-guide.css'],
+    ['/study-guide.html', 'study-guide.html'],
+    ['/terms.html', 'terms.html'],
+    ['/privacy.html', 'privacy.html'],
     ['/app.js', 'app.js'],
     ['/slides-data.js', 'slides-data.js'],
     ['/economyin.svg', 'economyin.svg'],
@@ -82,8 +89,13 @@ const publicAssets = new Map([
     ['/assets/history.svg', 'assets/history.svg'],
     ['/assets/reforms.svg', 'assets/reforms.svg'],
     ['/assets/sectors.svg', 'assets/sectors.svg'],
+    ['/assets/agriculture.svg', 'assets/agriculture.svg'],
+    ['/assets/industry.svg', 'assets/industry.svg'],
+    ['/assets/services.svg', 'assets/services.svg'],
     ['/assets/challenges.svg', 'assets/challenges.svg'],
     ['/assets/public-programs.svg', 'assets/public-programs.svg'],
+    ['/assets/rural-development.svg', 'assets/rural-development.svg'],
+    ['/assets/urban-development.svg', 'assets/urban-development.svg'],
     ['/assets/sustainability.svg', 'assets/sustainability.svg'],
     ['/assets/global-trade.svg', 'assets/global-trade.svg']
 ]);

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Industry and production</title><desc id="desc">A factory, rail freight, and connected production lines.</desc>
+  <rect width="1200" height="760" rx="12" fill="#e7e3d9"/><path d="M0 585h1200v175H0Z" fill="#c6bead"/>
+  <path d="M130 585V300l190 120V325l185 110V315l190 112v158Z" fill="#9e6547"/><path d="M168 370h56v65h-56m98-12h55v66h-55m91-5h56v66h-56m92-24h55v66h-55m86-145h54v66h-54" fill="#e0c9a4"/>
+  <path d="M190 299V138h42v188m82-89V95h45v160" fill="#586c6a"/><path d="M200 133q-24-27 7-49 28 23-7 49m78-40q-28-27 5-50 30 24-5 50" fill="#9da79a"/>
+  <g transform="translate(690 430)"><path d="M0 145h435" stroke="#4c5b57" stroke-width="12"/><path d="M35 45h150l55 62v38H35Z" fill="#456b6c" stroke="#304941" stroke-width="8"/><path d="M185 64h80l50 43v38H185Z" fill="#bd8052" stroke="#304941" stroke-width="8"/><path d="M55 59h62v37H55m155-21h38l32 27h-70Z" fill="#d7ded2"/><g fill="#34453f"><circle cx="85" cy="150" r="24"/><circle cx="215" cy="150" r="24"/><circle cx="300" cy="150" r="24"/></g></g>
+  <path d="M715 300h275M760 265h225" stroke="#a55235" stroke-width="12" stroke-linecap="round"/><circle cx="1010" cy="300" r="20" fill="#c88d5f"/>
+</svg>
