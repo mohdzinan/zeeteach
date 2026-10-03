@@ -303,6 +303,11 @@ kbd { padding: 1px 5px; border: 1px solid var(--rule); background: var(--paper-r
     .about-layout { grid-template-columns: .7fr 1fr; }
     .about-copy { grid-column: 2; }
 }
+@media (max-width: 1120px) {
+    .header-inner { flex-wrap: wrap; gap: 14px 22px; padding-block: 12px; }
+    .primary-nav { order: 4; width: 100%; justify-content: space-between; gap: 14px; }
+    .header-action { margin-left: auto; }
+}
 @media (max-width: 720px) {
     .section-wrap, .header-inner { width: min(100% - 36px, 600px); }
     .header-inner { min-height: 68px; gap: 14px; flex-wrap: wrap; padding-block: 10px; }
