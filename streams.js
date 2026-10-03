@@ -6,9 +6,9 @@
     const syllabusNames = { kerala: 'Kerala Syllabus', icse: 'ICSE', cbse: 'CBSE' };
     const syllabus = syllabusNames[query.get('syllabus')] ? query.get('syllabus') : 'kerala';
     const track = ['plus-one-improvement', 'current'].includes(query.get('track')) ? query.get('track') : '';
-    const trackLabel = track === 'plus-one-improvement' ? ' · Plus One Improvement' : track === 'current' ? ' · Current' : '';
+    const trackLabel = track === 'plus-one-improvement' ? ' · Grade +1 Improvement' : track === 'current' ? ' · Current' : '';
     const gradeName = `${grade === '12' ? 'Class XII' : 'Class XI'}${trackLabel}`;
-    const gradeYear = `CLASS ${grade === '12' ? 'XII' : 'XI'} · 2025${track === 'plus-one-improvement' ? ' · PLUS ONE IMPROVEMENT' : track === 'current' ? ' · CURRENT' : ''}`;
+    const gradeYear = `CLASS ${grade === '12' ? 'XII' : 'XI'} · 2025${track === 'plus-one-improvement' ? ' · GRADE +1 IMPROVEMENT' : track === 'current' ? ' · CURRENT' : ''}`;
 
     document.querySelectorAll('[data-grade-syllabus]').forEach((node) => {
         node.textContent = `${gradeName} · ${syllabusNames[syllabus]}`;

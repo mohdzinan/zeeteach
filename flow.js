@@ -9,6 +9,13 @@
 
     document.documentElement.dataset.grade = grade;
     document.documentElement.dataset.syllabus = syllabus;
+    if (track === 'plus-one-improvement') {
+        document.documentElement.dataset.track = track;
+        document.querySelectorAll('[data-track-label]').forEach((node) => {
+            node.textContent = 'GRADE +1 IMPROVEMENT';
+            node.hidden = false;
+        });
+    }
     document.querySelectorAll('a[href^="/"]').forEach((link) => {
         const destination = new URL(link.getAttribute('href'), window.location.origin);
         if (destination.pathname === '/') return;
