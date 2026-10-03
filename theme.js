@@ -18,7 +18,8 @@
         if (meta) meta.content = theme === 'dark' ? '#191f1b' : '#f2eee5';
         document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
             const nextTheme = theme === 'dark' ? 'light' : 'dark';
-            button.textContent = `${nextTheme === 'dark' ? 'Dark' : 'Light'} mode`;
+            const label = button.querySelector('.theme-label');
+            if (label) label.textContent = nextTheme === 'dark' ? 'Dark' : 'Light';
             button.setAttribute('aria-label', `Switch to ${nextTheme} mode`);
             button.setAttribute('aria-pressed', String(theme === 'dark'));
         });

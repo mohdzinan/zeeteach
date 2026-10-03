@@ -95,8 +95,12 @@ button { color: inherit; }
     border-bottom: 1px solid var(--forest);
 }
 .header-action span { padding-left: 8px; color: var(--clay); }
-.theme-toggle { flex: 0 0 auto; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 2px; color: var(--ink); background: transparent; font-size: .8rem; cursor: pointer; }
+.theme-toggle { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 9px; padding: 7px 11px; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink); background: var(--paper-raised); font-size: .8rem; cursor: pointer; }
 .theme-toggle:hover { border-color: var(--clay); }
+.theme-switch-track { position: relative; width: 34px; height: 19px; flex: 0 0 auto; border-radius: 999px; background: var(--rule); transition: background-color .2s ease; }
+.theme-switch-track::after { position: absolute; top: 3px; left: 3px; width: 13px; height: 13px; border-radius: 50%; background: var(--paper-raised); content: ""; transition: transform .2s ease; }
+.theme-toggle[aria-pressed="true"] .theme-switch-track { background: var(--forest-soft); }
+.theme-toggle[aria-pressed="true"] .theme-switch-track::after { transform: translateX(15px); }
 .theme-controls { display: flex; align-items: center; gap: 6px; }
 .theme-system { padding: 7px 8px; border: 0; color: var(--muted); background: transparent; font-size: .76rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .theme-system[hidden] { display: none; }
@@ -307,7 +311,7 @@ kbd { padding: 1px 5px; border: 1px solid var(--rule); background: var(--paper-r
     .primary-nav { order: 3; width: 100%; justify-content: space-between; gap: 12px; }
     .primary-nav a { font-size: .82rem; }
     .header-action { margin-left: auto; font-size: .8rem; }
-    .theme-toggle { margin-left: auto; padding: 7px 8px; font-size: .75rem; }
+    .theme-toggle { margin-left: auto; padding: 7px 9px; font-size: .75rem; }
     .hero { grid-template-columns: 1fr; padding-top: 45px; padding-bottom: 56px; }
     .hero-copy { padding: 0; }
     .hero h1 { max-width: 580px; font-size: clamp(2.6rem, 11vw, 4rem); }
