@@ -10,14 +10,13 @@ const ROOT = __dirname;
 
 app.disable('x-powered-by');
 
-// Security headers. Inline styles are currently used for the skip-link; scripts
-// and all page assets are same-origin. Font Awesome is pinned to its CDN host.
+// Security headers. Scripts, styles, fonts, and page assets are same-origin.
 app.use((req, res, next) => {
     res.setHeader('Content-Security-Policy', [
         "default-src 'self'",
         "script-src 'self'",
-        "style-src 'self' https://cdnjs.cloudflare.com",
-        "font-src 'self' https://cdnjs.cloudflare.com",
+        "style-src 'self'",
+        "font-src 'self'",
         "img-src 'self' data:",
         "connect-src 'self'",
         "base-uri 'self'",
@@ -95,6 +94,8 @@ app.get('/privacy', (req, res) => res.sendFile(path.join(ROOT, 'pages/privacy.ht
 
 const publicAssets = new Map([
     ['/styles.css', 'public/css/styles.css'],
+    ['/fonts/dm-sans-latin.woff2', 'public/fonts/dm-sans-latin.woff2'],
+    ['/fonts/literata-latin.woff2', 'public/fonts/literata-latin.woff2'],
     ['/favicon.svg', 'public/favicon.svg'],
     ['/theme.js', 'public/js/theme.js'],
     ['/hub.css', 'public/css/hub.css'],

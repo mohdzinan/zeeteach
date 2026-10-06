@@ -5,6 +5,11 @@
     const grade = query.get('grade');
     const syllabus = query.get('syllabus');
     const track = query.get('track');
+    const courseStream = document.querySelector('[data-course-stream]');
+    if (courseStream && window.location.pathname.startsWith('/humanities/')) {
+        courseStream.href = '/humanities';
+        courseStream.textContent = 'Humanities';
+    }
     if (!['11', '12'].includes(grade) || !['kerala', 'icse', 'cbse'].includes(syllabus)) return;
 
     document.documentElement.dataset.grade = grade;

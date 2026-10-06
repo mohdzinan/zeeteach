@@ -154,6 +154,7 @@ function createIndicators() {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'indicator-dot';
+        button.textContent = String(index + 1).padStart(2, '0');
         button.setAttribute('aria-label', `Go to slide ${index + 1}: ${data.title}`);
         button.addEventListener('click', () => showSlide(index));
         indicator.appendChild(button);
@@ -240,7 +241,7 @@ function downloadSlide() {
     const body = data.type === 'title'
         ? `${image}<p class="subtitle">${escapeHtml(data.subtitle || '')}</p>${data.message ? `<p>${escapeHtml(data.message)}</p>` : ''}`
         : `${image}${content}`;
-    const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${title}</title><style>body{font:18px/1.6 'Trebuchet MS',Arial,sans-serif;color:#202a25;background:#f2eee5;margin:0;padding:8vw}main{max-width:900px;margin:auto;background:#e9e5db;padding:3rem}h1{color:#273c31;border-bottom:1px solid #a55235;padding-bottom:1rem;font:500 2.4rem Georgia,serif}li{margin:.7rem 0}img{display:block;max-width:100%;max-height:46vh;object-fit:contain;margin:auto}.subtitle{color:#40594b;font-size:1.15rem}@media print{body{padding:0}main{padding:2rem}}</style><main><h1>${title}</h1>${body}</main></html>`;
+    const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${title}</title><style>body{font:18px/1.6 'Segoe UI',Arial,sans-serif;color:#152a35;background:#edf1f2;margin:0;padding:8vw}main{max-width:900px;margin:auto;background:#fbfcfb;padding:3rem}h1{color:#152a35;border-bottom:1px solid #c5d0d2;padding-bottom:1rem;font:500 2.4rem Georgia,serif}li{margin:.7rem 0}img{display:block;max-width:100%;max-height:46vh;object-fit:contain;margin:auto}.subtitle{color:#24566a;font-size:1.15rem}@media(prefers-color-scheme:dark){body{color:#edf2ef;background:#101b21}main{background:#19272f}h1{color:#edf2ef;border-color:#40535b}.subtitle{color:#92bbc7}}@media print{body{padding:0}main{padding:2rem}}</style><main><h1>${title}</h1>${body}</main></html>`;
     const url = URL.createObjectURL(new Blob([html], { type: 'text/html;charset=utf-8' }));
     const link = document.createElement('a');
     link.href = url;
