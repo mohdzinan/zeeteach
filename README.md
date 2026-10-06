@@ -93,19 +93,25 @@ The website uses an eye-comfortable color palette:
 18. **Learning Resources** - References and materials
 19. **Thank You Slide** - Conclusion
 
-## 📁 File Structure
+## Project Structure
 
-```
+```text
 zeeteach/
-├── index.html          # Main HTML file
-├── styles.css          # Eye-comfortable styling
-├── app.js              # Slideshow functionality
-├── slides-data.js      # Presentation content
-├── server.js           # Express server
-├── package.json        # Project dependencies
-└── README.md           # This file
+|-- assets/             Topic illustrations
+|-- downloads/          Economics PDF resources
+|-- docs/               Project notes and flowchart
+|-- pages/              Site HTML pages
+|-- public/
+|   |-- css/            Stylesheets
+|   |-- js/             Browser scripts and data
+|   |-- economyin.svg   Site logo
+|   `-- favicon.svg     Browser icon
+|-- scripts/            Local project utilities
+|-- tmp/                Temporary PDF text extracts (ignored)
+|-- server.js           Express server and routes
+|-- package.json        Dependencies and commands
+`-- README.md           Project documentation
 ```
-
 ## 🌐 Deployment Options
 
 ### Local Development

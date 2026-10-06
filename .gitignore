@@ -14,3 +14,6 @@ pnpm-debug.log*
 *.old
 coverage/
 dist/
+
+# Local scratch extracts
+tmp/

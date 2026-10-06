@@ -10,19 +10,9 @@ Your interactive presentation website **ZeeTeach** has been successfully created
 
 Open this link in your web browser to access the fully functional presentation.
 
-## 📦 Project Structure
+## Project Structure
 
-```
-D:\code\WebApp\zeeteach\
-├── index.html           # Main webpage
-├── styles.css           # Eye-comfortable styling
-├── app.js               # Interactive slideshow functionality
-├── slides-data.js       # 19 slides with content and images
-├── server.js            # Express server
-├── package.json         # Dependencies
-├── README.md            # Full documentation
-└── node_modules/        # Installed packages
-```
+See the current folder map in [README.md](README.md#project-structure).
 
 ## 🎨 Design Features
 

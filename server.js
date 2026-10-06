@@ -70,40 +70,48 @@ function publicApiRateLimit(req, res, next) {
     next();
 }
 
-app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
-app.get('/syllabus', (req, res) => res.sendFile(path.join(ROOT, 'syllabus.html')));
-app.get('/streams', (req, res) => res.sendFile(path.join(ROOT, 'streams.html')));
-app.get('/plus-two-options', (req, res) => res.sendFile(path.join(ROOT, 'plus-two-options.html')));
-app.get('/commerce', (req, res) => res.sendFile(path.join(ROOT, 'commerce.html')));
-app.get('/commerce/economics', (req, res) => res.sendFile(path.join(ROOT, 'economics.html')));
-app.get('/commerce/economics/chapter-1', (req, res) => res.sendFile(path.join(ROOT, 'chapter-1.html')));
-app.get('/humanities', (req, res) => res.sendFile(path.join(ROOT, 'humanities.html')));
-app.get('/humanities/economics', (req, res) => res.sendFile(path.join(ROOT, 'humanities-economics.html')));
-app.get('/humanities/economics/chapter-1', (req, res) => res.sendFile(path.join(ROOT, 'chapter-1.html')));
-app.get('/study-guide', (req, res) => res.sendFile(path.join(ROOT, 'study-guide.html')));
-app.get('/quiz', (req, res) => res.sendFile(path.join(ROOT, 'quiz.html')));
-app.get('/terms', (req, res) => res.sendFile(path.join(ROOT, 'terms.html')));
-app.get('/privacy', (req, res) => res.sendFile(path.join(ROOT, 'privacy.html')));
+app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'pages/index.html')));
+app.get('/syllabus', (req, res) => res.sendFile(path.join(ROOT, 'pages/syllabus.html')));
+app.get('/streams', (req, res) => res.sendFile(path.join(ROOT, 'pages/streams.html')));
+app.get('/plus-two-options', (req, res) => res.sendFile(path.join(ROOT, 'pages/plus-two-options.html')));
+app.get('/commerce', (req, res) => res.sendFile(path.join(ROOT, 'pages/commerce.html')));
+app.get('/commerce/economics', (req, res) => res.sendFile(path.join(ROOT, 'pages/economics.html')));
+app.get('/commerce/economics/chapter-1', (req, res) => res.sendFile(path.join(ROOT, 'pages/chapter-1.html')));
+app.get('/humanities', (req, res) => res.sendFile(path.join(ROOT, 'pages/humanities.html')));
+app.get('/humanities/economics', (req, res) => res.sendFile(path.join(ROOT, 'pages/humanities-economics.html')));
+app.get('/humanities/economics/chapter-1', (req, res) => res.sendFile(path.join(ROOT, 'pages/chapter-1.html')));
+const studyMaterialDownloads = new Map([
+    ['/downloads/revision-guide', 'downloads/Class_11_Economics_Important_Topics_Revision_Guide.pdf'],
+    ['/downloads/economics-notes', 'downloads/Hsslive_XI INDIAN ECONOMIC DEVELOPMENT_Notes.pdf'],
+    ['/downloads/scheme-of-work', 'downloads/XI_Indian_Economic_Development_Scheme_of_Work.pdf']
+]);
+for (const [url, filename] of studyMaterialDownloads) {
+    app.get(url, (req, res) => res.download(path.join(ROOT, filename), filename));
+}
+app.get('/study-guide', (req, res) => res.sendFile(path.join(ROOT, 'pages/study-guide.html')));
+app.get('/quiz', (req, res) => res.sendFile(path.join(ROOT, 'pages/quiz.html')));
+app.get('/terms', (req, res) => res.sendFile(path.join(ROOT, 'pages/terms.html')));
+app.get('/privacy', (req, res) => res.sendFile(path.join(ROOT, 'pages/privacy.html')));
 
 const publicAssets = new Map([
-    ['/styles.css', 'styles.css'],
-    ['/favicon.svg', 'favicon.svg'],
-    ['/theme.js', 'theme.js'],
-    ['/hub.css', 'hub.css'],
-    ['/syllabus.js', 'syllabus.js'],
-    ['/streams.js', 'streams.js'],
-    ['/flow.js', 'flow.js'],
-    ['/study-guide.css', 'study-guide.css'],
-    ['/study-guide.html', 'study-guide.html'],
-    ['/quiz.css', 'quiz.css'],
-    ['/quiz.html', 'quiz.html'],
-    ['/quiz-data.js', 'quiz-data.js'],
-    ['/quiz.js', 'quiz.js'],
-    ['/terms.html', 'terms.html'],
-    ['/privacy.html', 'privacy.html'],
-    ['/app.js', 'app.js'],
-    ['/slides-data.js', 'slides-data.js'],
-    ['/economyin.svg', 'economyin.svg'],
+    ['/styles.css', 'public/css/styles.css'],
+    ['/favicon.svg', 'public/favicon.svg'],
+    ['/theme.js', 'public/js/theme.js'],
+    ['/hub.css', 'public/css/hub.css'],
+    ['/syllabus.js', 'public/js/syllabus.js'],
+    ['/streams.js', 'public/js/streams.js'],
+    ['/flow.js', 'public/js/flow.js'],
+    ['/study-guide.css', 'public/css/study-guide.css'],
+    ['/study-guide.html', 'pages/study-guide.html'],
+    ['/quiz.css', 'public/css/quiz.css'],
+    ['/quiz.html', 'pages/quiz.html'],
+    ['/quiz-data.js', 'public/js/quiz-data.js'],
+    ['/quiz.js', 'public/js/quiz.js'],
+    ['/terms.html', 'pages/terms.html'],
+    ['/privacy.html', 'pages/privacy.html'],
+    ['/app.js', 'public/js/app.js'],
+    ['/slides-data.js', 'public/js/slides-data.js'],
+    ['/economyin.svg', 'public/economyin.svg'],
     ['/assets/cover-india-economy.svg', 'assets/cover-india-economy.svg'],
     ['/assets/development.svg', 'assets/development.svg'],
     ['/assets/history.svg', 'assets/history.svg'],
